@@ -19,7 +19,7 @@ This what the script does:
 
 - Replace `i686-elf` with your target triple and you are set. It will do everything. It will create all the directories you need, download `gcc 13.2.0` and `binutils 2.42` and build them together. It even installs the dependencies for you.
 
-- You can add this line to the end of your `.bashrc` or `.zshrc` file( _or whatever shell resource configuration file you are using_ )
+- After installation is done, you can add this line to the end of your `.bashrc` or `.zshrc` file( _or whatever shell resource configuration file you are using_ )
 
   ```sh
   export CROSS_PATH="$HOME/cross/bin"
@@ -29,9 +29,9 @@ This what the script does:
 - Then ask your shell to reload the configuration file by running:
 
   ```sh
-    source ~/.bashrc
+    source ~/.bashrc # for bash
     # or
-    source ~/.zshrc
+    source ~/.zshrc # for zsh
   ```
 
 - Then you can use the cross-compiler by running the following command to check if it is installed:
